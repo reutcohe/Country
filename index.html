@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="atlas.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Open+Sans&family=PT+San s:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <script src="
+    https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js
+    "></script>
+    <script defer type="module" src="js/app.js"></script>
+
+</head>
+
+<body>
+    <header class="container-fluid p-2">
+        <div class="burger col-3 d-block d-md-none">
+            <svg xmlns="http://www.w3.org/2000/svg" id="burger_btn" width="57" height="57" fill="currentColor"
+                class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+            </svg>
+        </div>
+        <div class=" row  justify-content-around align-items-center ms-5">
+
+            <div class="col-auto logo p-0">
+                <a href="index.html"> <img src="images/__לכידה-removebg-preview.png" style="width: 60px;"></a>
+            </div>
+            <nav class="container col-sm-12 col-md-10 d-md-block" id="id_nav">
+                <div class="row justify-content-around align-items-center ">
+
+                    <div class="col-auto links p-0">
+                        <a id="id_usa">USA</a>
+                        <a id="id_israel">ISRAEL</a>
+                        <a id="id_uk">UK</a>
+                        <a id="id_france">FRANCE</a>
+                        <a id="id_thailand">THAILAND</a>
+                    </div>
+
+                    <div class=" col-md-4">
+                        <div class=" d-flex">
+                            <input id="id_input" placeholder="Search country..." type="text" class="form-control">
+                            <!-- <button id="btn_Search" class="btn btn-dark ms-2">Search</button> -->
+                        </div>
+                        <div>
+                            <select id="id_select" class="col-12 mt-2">
+                                <!-- <option>dd</option>
+                            <option>gg</option>
+                            <option>ii</option> -->
+                            </select>
+                            <select id="id_select_sort" style="color:rgb(125, 125, 125)" class="col-12 mt-2">
+                                <option style="color:rgb(125, 125, 125)">sort by...</option>
+                                <option>name</option>
+                                <option>population</option>
+                                <option>region</option>
+
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="burger col-3 d-sm-block d-md-none">
+        <svg xmlns="http://www.w3.org/2000/svg" id="burger_btn" width="57" height="57" fill="currentColor"
+            class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </div>
+    <main class="container-fluid  pb-5 ">
+        <div class="container">
+            <div id="id_loading" class="loading text-center">
+                <img src="images/loading.gif" alt="loading">
+
+            </div>
+            <div class="row mt-5" id="id_row">
+
+                <!-- <div class=" col-12 col-md-6 col-lg-4 mt-3">
+                    <div class="m-2 box col-11 border border-1 shadow text-dark  bg-secondary text-center">
+                        <h2>spain:</h2>
+                        <p>pupolar:</p>
+                    </div>
+                </div> -->
+                <!-- <img src="images/background_img.jpg" class="col-12 col-lg-6 my-auto" style="height: 280px;">
+<div class="col-12 col-lg-5 pt-1 ps-3 text-center text-lg-start">
+    <h2>שם הארץ</h2>
+    <table>
+        <tbody>
+            <td></td>
+        </tbody>
+    </table>
+</div> -->
+
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid  text-center bg-black pt-2 " style="min-height: 100px;">
+        <div class="container p-0">
+            <p class="text-center text-white m-0"><i class="fa fa-copyright" aria-hidden="true"></i> Reut Cohen 2023
+            </p>
+            <div class="row " style="width: 100%;">
+                <div>
+                    <a href="#" class="text-white"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#" class="text-white"><i class="fa fa-youtube-play " aria-hidden="true"></i></i></a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

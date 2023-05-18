@@ -1,0 +1,80 @@
+*{
+    font-family: 'Chelsea Market', cursive;
+}
+body {
+    /* font-family: 'Arima', cursive;
+    font-family: 'Roboto', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+    background: rgb(82, 82, 82);
+    box-shadow: 1px 10px 17px -5px rgba(0,0,0,0.75);
+    position: fixed;
+z-index: 999;
+
+}
+
+header .container h2 {
+    text-shadow: 2px 2px 2px white;
+    font-family: 'Rubik', sans-serif;
+    /* font-family: 'Arima', cursive; */
+    text-decoration: none;
+}
+
+header .container .links a {
+    color: white;
+    text-decoration: none;
+    padding: 0 8px;
+    font-size: 1.1em;
+    /* font-family: 'Arima', cursive; */
+    cursor: pointer;
+}
+
+header .container .links a:hover {
+    color: rgb(144, 168, 160);
+}
+nav{
+    display: none;
+    /* margin-right: 30px; */
+
+}
+main {
+    width: 100%;
+    background-image: url(images/background_img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    padding-top: 65px;
+   
+}
+
+main .container div .neighbor:hover {
+    text-decoration: underline;
+}
+.card{
+    transition:3000ms;
+   
+}
+.card:hover{
+    transform:scale(1.07)
+}
+@media (max-width:768px) {
+    .div_info {
+        background: white;
+        opacity: 45%;
+        /* margin-top: 30px; */
+    }
+    header{
+        display: flex;
+justify-content: space-around;
+    }
+    nav{
+        position:absolute;
+        right: 0;
+        top:80px;
+        display: none;
+        /* background: white; */
+        z-index: 99;
+    }
+}
